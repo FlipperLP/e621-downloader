@@ -14,6 +14,9 @@ const sequelize = new Sequelize('posts', null, null, {
   storage: `${rootDir}posts.sqlite`,
   logging: true,
   transactionType: 'IMMEDIATE',
+  retry: {
+    max: 20,
+  },
 });
 
 global.sequelize = sequelize;
