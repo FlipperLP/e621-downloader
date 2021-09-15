@@ -87,6 +87,6 @@ async function downloadFile(url, md5, ext) {
           downloadFile(url, md5, ext);
         } else console.warn('No URL present, skipping.');
       });
-    }, 100 * i);
+    }, 10 * i);
   }
 })();
