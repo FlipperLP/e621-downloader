@@ -1,0 +1,7 @@
+{
+  "production": {
+    "database": "posts",
+    "storage": "./posts.sqlite",
+    "dialect": "sqlite"
+  }
+}
