@@ -12,7 +12,7 @@ const rootDir = './out/';
 const sequelize = new Sequelize('posts', null, null, {
   dialect: 'sqlite',
   storage: `${rootDir}posts.sqlite`,
-  logging: true,
+  logging: false,
   transactionType: 'IMMEDIATE',
   retry: {
     max: 20,
