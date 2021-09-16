@@ -51,7 +51,7 @@ function createEntry(id, md5, file_ext, tag_string, tag_count_general) {
 async function getPics(page) {
   const { body } = await endpoint('posts.json', {
     searchParams: {
-      tags: 'id:>=100000 order:id_asc -status:deleted', page, limit: 320, login: 'Flipper', api_key: 'xTX3rSxE2A7tVUDDWaGYDWSB',
+      tags: 'id:>=100000 order:id_asc -status:deleted', page, limit: 320, login: 'Flipper', api_key: 'changed',
     },
   });
   return body.posts;
